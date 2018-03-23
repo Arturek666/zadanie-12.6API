@@ -4,6 +4,7 @@ var countriesList = $('#countries');
 function searchCountries() {
     var countryName = $('#country-name').val();
     if (!countryName.length) countryName = 'Poland';
+
     $.ajax({
         url: url + countryName,
         method: 'GET',
